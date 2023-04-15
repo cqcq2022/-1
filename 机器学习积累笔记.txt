@@ -1,0 +1,50 @@
+实用性技巧：
+1. pycharm量加引号：https://blog.csdn.net/qq_51484756/article/details/121177123?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-3-121177123-blog-112783755.235%5Ev28%5Epc_relevant_recovery_v2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-3-121177123-blog-112783755.235%5Ev28%5Epc_relevant_recovery_v2&utm_relevant_index=5
+
+先看我最终打包使用的命令
+
+pyinstaller -F -w -i 16.ico -n active xx.py
+2.pycharm 终端无法激活conda环境：https://blog.csdn.net/qq_27677599/article/details/123307034
+问题原因
+pycharm 默认的终端是 Windows PowerShell
+
+三、pycharm 社区版解决方法
+将终端设置为 cmd.exe
+四、pycharm 专业版解决方法
+方法1：pycharm 社区版的解决方法同样适用于专业版
+方法2：专业版终端下拉菜单
+3，正则表达式：
+title=re.findall('<title>(.*?)</title>',response_text)[0]
+title = re.sub('[\/:：*?"<>|]', '', title)
+title = title.replace('\\', '_')
+4. import numpy as np
+a= np.random.random([4,3])*100
+print(a)
+b=int(a)
+print(b)
+1
+2
+3
+4
+5
+numpy类型的转换需要更改为astype
+
+b=a.astype(np.int)
+print(b)
+
+4成报错功解决The ‘pathlib‘ package is an obsolete backport of a standard library package
+在pyinstaller的打包过程中我遇到了，The 'pathlib' package is an obsolete backport of a standard library package and is incompatible with PyInstaller. Please remove this package (located in D:\Anaconda\lib\site-packages) using的问题就是conda里面的打包程序与pyinstaller的打包模块是冲突了的
+??编辑
+??编辑?
+5. 强制解决办法：类型转换
+6. ?
+?ModuleNotFoundError: No module named 'sklearn'
+?编辑
+?解决办法就是：
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple scikit-learn
+?
+?编辑
+?7图标设置：https://www.aconvert.com/cn/icon/jpg-to-ico/
+8. 
+解决办法：模块导入时先要在class之前
+
